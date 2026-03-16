@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Professional Workload – Monthly Capacity Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+<!-- [CSS remains the same as your original file] -->
+</head>
+<body>
+<!-- [HTML structure remains the same] -->
+
+<script>
+/* ═══════════════════════════ CONFIG ═══════════════════════════ */
+const USE_LIVE_DATA = false;  // Keep false - data is injected at build time
+
+/* ═══════════════════════════ DATA (Auto-Generated) ═══════════════════════════ */
+// These arrays will be replaced by Python script on each build
+const RAW = [
+{project:'Antelope Reg',vertical:'CF',type:'Minor',sop_date:'2026-04-01',id_start:'2026-02-12',id_end:'2026-03-14',duration:22,resource:'Aamod',role:'ID1'},
+// ... (Python will inject all 46 records from Excel)
+];
+
+const MONTHS = ['2026-02','2026-03','2026-04','2026-05','2026-06','2026-07','2026-08','2026-09'];
+const MONTH_LABELS = ['Feb 26','Mar 26','Apr 26','May 26','Jun 26','Jul 26','Aug 26','Sep 26'];
+const RESOURCES = ['Aamod','Bibin','Futuring','Khushboo','Probin','Ratan','Ravinder','Shivraj','Smriti','Stuty','Zulkar'];
+
+const NEXT_FREE = [
+{resource:'Aamod',nextFreeDate:'10-APR-26',nextFreeMonth:'2026-04',countEndingThatMonth:4},
+// ... (Python will inject all resources)
+];
+
+/* ═══════════════════ [Rest of JavaScript remains the same] ═══════════════════ */
+</script>
+</body>
+</html>
